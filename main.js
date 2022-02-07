@@ -1,3 +1,5 @@
+// array
+
 const icons = [
 	{
 		name: 'cat',
@@ -113,6 +115,8 @@ const icons = [
 	}
 ];
 
+//funzione per filtrare gli elementi
+
 const container = document.getElementById('icons-container');
 
 drawIcons(container, icons);
@@ -140,7 +144,7 @@ selector.addEventListener('change', function() {
 
 
 
-
+// popola l'HTML in modo dinamico con le info dell'array
 
 
 function drawIcons(container, icons) {
