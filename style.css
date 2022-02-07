@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 /* header */
@@ -34,6 +33,7 @@
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    font-size: 13px;
 }
 
 #icons-container {

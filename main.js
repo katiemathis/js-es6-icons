@@ -154,7 +154,7 @@ function drawIcons(container, icons) {
     icons.forEach(oggetto => {
 
         content += `<div class="icon">
-        <i style="color: ${oggetto.color};" class="${oggetto.family} ${oggetto.prefix}${oggetto.name}"></i>
+        <i style="color: ${oggetto.color};" class="image ${oggetto.family} ${oggetto.prefix}${oggetto.name}"></i>
         <div class="icon-text">${oggetto.name}</div>
     </div>`;
     });
