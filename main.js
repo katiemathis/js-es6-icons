@@ -112,3 +112,50 @@ const icons = [
 		color: 'blue'
 	}
 ];
+
+const container = document.getElementById('icons-container');
+
+drawIcons(container, icons);
+
+const selector = document.getElementById('type-filter');
+
+selector.addEventListener('change', function() {
+
+    let selection = this.value;
+
+    if (selection == 'all') {
+        drawIcons(container, icons);
+    } else {
+
+        let filteredIcons = icons.filter( icon => {
+            if (icon.type == selection) {
+                return true;
+            }
+            return false;
+        });
+
+        drawIcons(container, filteredIcons);
+    }
+});
+
+
+
+
+
+
+function drawIcons(container, icons) {
+
+    let content = '';
+
+    icons.forEach(oggetto => {
+
+        content += `<div class="icon">
+        <i style="color: ${oggetto.color};" class="${oggetto.family} ${oggetto.prefix}${oggetto.name}"></i>
+        <div class="icon-text">${oggetto.name}</div>
+    </div>`;
+    });
+
+    container.innerHTML = content;
+
+}
+
